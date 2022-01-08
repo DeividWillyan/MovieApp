@@ -191,6 +191,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
+  login:
+    dependency: "direct main"
+    description:
+      path: "packages/micro_apps/login"
+      relative: true
+    source: path
+    version: "0.0.1"
   lottie:
     dependency: transitive
     description:

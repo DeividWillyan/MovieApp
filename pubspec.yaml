@@ -14,6 +14,9 @@ dependencies:
 
   movie:
     path: packages/micro_apps/movie
+  
+  login:
+    path: packages/micro_apps/login
 
 dev_dependencies:
   flutter_test:
