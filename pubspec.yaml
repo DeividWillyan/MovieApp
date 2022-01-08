@@ -8,15 +8,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dio:
-  lottie:
-  cached_network_image:
-  shared_preferences:
 
-  dartz:
-  get_it:
+  micro_core:
+    path: packages/core/micro_core
 
-
+  movie:
+    path: packages/micro_apps/movie
 
 dev_dependencies:
   flutter_test:
