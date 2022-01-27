@@ -27,6 +27,14 @@ abstract class BaseApp {
     }
   }
 
+  void registerListeners() {
+    if (microApps.isNotEmpty) {
+      for (MicroApp microapp in microApps) {
+        microapp.createListener();
+      }
+    }
+  }
+
   Route<dynamic>? generateRoute(RouteSettings settings) {
     var routerName = settings.name;
     var routerArgs = settings.arguments;

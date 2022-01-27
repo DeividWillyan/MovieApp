@@ -1,3 +1,4 @@
+import 'package:eventbus/eventbus.dart';
 import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
 
@@ -14,6 +15,7 @@ class AuthenticatorPage extends StatelessWidget {
             TextField(),
             ElevatedButton(
               onPressed: () {
+                EventBus.emit('Logou');
                 navigatorKey.currentState?.pushReplacementNamed('/home');
               },
               child: const Text('Entrar'),

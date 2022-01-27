@@ -6,4 +6,6 @@ abstract class MicroApp {
   Map<String, WidgetBuilderArgs> get routes;
 
   void Function() get injectionsRegister;
+
+  void Function() get createListener;
 }
