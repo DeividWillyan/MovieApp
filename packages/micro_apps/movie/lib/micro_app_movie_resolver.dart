@@ -1,3 +1,4 @@
+import 'package:broadcaster/broadcaster.dart';
 import 'package:micro_core/micro_core.dart';
 import 'package:movie/app/core/inject/inject.dart';
 import 'package:movie/app/features/movie/presentation/ui/pages/home_page.dart';
@@ -13,4 +14,13 @@ class MicroAppMovieResolver implements MicroApp {
 
   @override
   void Function() get injectionsRegister => Inject.initialize;
+
+  @override
+  void Function() get createListener => () {
+        Broadcast.listen((event) {
+          if (event == BroadcastType.ATHENTICATION_SUCCESS) {
+            print('Logou');
+          }
+        });
+      };
 }

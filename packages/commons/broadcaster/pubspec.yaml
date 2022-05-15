@@ -1,19 +1,15 @@
-name: micro_core
+name: broadcaster
 description: A new Flutter package project.
 version: 0.0.1
 homepage:
-publish_to: none
 
 environment:
-  sdk: ">=2.12.1 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
-  broadcaster:
-    path: ../../commons/broadcaster
 
 dev_dependencies:
   flutter_test:

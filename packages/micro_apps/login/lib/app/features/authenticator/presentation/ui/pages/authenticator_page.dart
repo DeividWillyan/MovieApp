@@ -1,3 +1,4 @@
+import 'package:broadcaster/broadcaster.dart';
 import 'package:flutter/material.dart';
 import 'package:micro_core/micro_core.dart';
 
@@ -14,6 +15,7 @@ class AuthenticatorPage extends StatelessWidget {
             TextField(),
             ElevatedButton(
               onPressed: () {
+                Broadcast.emit(BroadcastType.ATHENTICATION_SUCCESS);
                 navigatorKey.currentState?.pushReplacementNamed('/home');
               },
               child: const Text('Entrar'),
